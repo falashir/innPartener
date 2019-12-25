@@ -1,0 +1,90 @@
+<html>
+
+<head>
+</head>
+
+<body>
+  <nav id="header" style="position: fixed; top: 0px; z-index: 50;"
+    class="headerScroll navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-right animated fadeInDownBig">
+    <div class="container en">
+      <a href="index.html" id="logo-a">
+
+        <div id="logo-flower-en">
+          <img src="../../img/logo.jpg" id="logo-img" width="70px" align="left">
+        </div>
+      </a>
+
+      <button id="button-collapse" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarResponsive">
+        <ul id="nav"
+          class="nav-menu-scroll nav-menu sf-js-enabled sf-arrows navbar-nav navbar-nav-ar mr-auto my-2 my-lg-0" "
+          style=" touch-action: auto;">
+          <li class="nav-item"><a href="../../index.html">Home</a></li>
+          <li class="nav-item">
+            <a href="about.html">About Us</a></li>
+
+          <!--services List-->
+          <li class="nav-item menu-has-children">
+            <a href="###" class="sf-with-ul"> Services</a>
+            <ul id="en-services-child-list" style="display: none; border-radius: 9px">
+              <li><a href="services/infra.html">Infrastructure</a></li>
+              <li><a href="services/cloud.html">Cloud Computing</a></li>
+              <li><a href="services/soft.html">Software Development</a></li>
+            </ul>
+          </li>
+
+          <!--product List-->
+          <li class="nav-item menu-has-children">
+            <a href="###" class="sf-with-ul"> Products</a>
+            <ul id="en-product-child-list" style="display: none; border-radius: 9px">
+              <li><a href="http://www.mjlsi.com/?lang=en" target="_blank">Mjlsi</a></li>
+              <li><a href="http://tadqiq.sa/en" target="_blank">Tadqiq</a></li>
+              <li><a href="###" target="_blank">Hollat</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+          <!--
+          <li class="nav-item" id="ar-page-in"><a id="a-page-in" style="font-family: hawsabah-font, sans-serif"
+              href="../pages-ar/contact.html">العربية
+            </a>
+          </li>
+        </ul>
+
+        <ul id="nav-2-en"
+          class="nav-menu nav-menu-scroll sf-js-enabled sf-arrows navbar-nav navbar-nav-ar ml-auto my-2 my-lg-0">
+          <li><a color="#FFFFFF" style="font-family: hawsabah-font, sans-serif"
+              id="ar-page-out" href="../pages-ar/contact.html">العربية</a>
+          </li>
+        -->
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+
+
+
+  <!-- JavaScript  -->
+  <script src="../../js/main.js"></script>
+
+  <script>
+    if ($(window).width() < 992) {
+      $("#nav-2-en").addClass("not-vis");
+      $("#ar-page-in").removeClass("not-vis");
+    } else {
+      $("#nav-2-en").removeClass("not-vis");
+      $("#ar-page-in").addClass("not-vis");
+    }
+
+  </script>
+
+</body>
+
+</html>
